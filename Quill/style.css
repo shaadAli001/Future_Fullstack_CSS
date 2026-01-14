@@ -48,12 +48,6 @@ Black: #000000 (Black)
 
 /* -------------Global Styles----------------- */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -123,18 +117,25 @@ ul {
   background-color: #ffff;
 }
 
-.highlight-primary{
+.highlight-primary {
   background-color: #339af0;
 }
 
-.highlight-secondary{
+.highlight-secondary {
   background-color: #9775fa;
 }
 
-.highlight-tertiary{
+.highlight-tertiary {
   background-color: #ff922b;
 }
 
+.logo-md {
+  width: 100px;
+}
+
+.logo-sm {
+  width: 80px;
+}
 
 /* -------------Section Styles----------------- */
 
@@ -149,6 +150,10 @@ ul {
 .cta-section {
   text-align: center;
 }
+.cta-card {
+  width: 1000px;
+  background-color: #339af0;
+}
 
 /* -----footer section----- */
 
@@ -156,7 +161,15 @@ ul {
   text-align: center;
 }
 
+.social-icons {
+  width: 20px;
+}
+
 /* -----feature section------ */
 .features-main-heading {
   text-align: center;
+}
+
+.features-img {
+  width: 400px;
 }
