@@ -33,10 +33,19 @@ img{
   margin-top: 50px;
 } */
 
-div {
+/* div {
   width: 800px;
   background-color: khaki;
   text-align: center;
   padding: 50px;
   border: 2px solid black;
+} */
+
+.box {
+  box-sizing: border-box;
+  background-color: plum;
+  border: 2px solid black;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
 }

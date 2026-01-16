@@ -38,15 +38,21 @@ Shade: #212529 (Graphite)
 White: #ffffff (White)
 Black: #000000 (Black)
 
-*/
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
+----Border radius---- 
+
+ 4px , 8px , 20px 
+
+ -----Spacing system----
+
+ 5px / 10px / 15px / 20px / 25px / 30px / 40px / 50px / 60px / 70px / 80px / 90px / 100px / 125px / 150px / 200px / 250px / 300px / 400px / 500px
+ */
 
 /* -------------Global Styles----------------- */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -95,16 +101,19 @@ ul {
   padding: 15px 30px;
   text-decoration: none;
   font-size: 16px;
+  border-radius: 8px;
   color: white;
 }
 /* filled btn-primary */
 .btn-primary:link,
 .btn-primary:visited {
   background-color: #339af0;
+  border: 2px solid #339af0;
 }
 .btn-primary:hover,
 .btn-primary:active {
   background-color: #1c7ed6;
+  border: 2px solid #1c7ed6;
 }
 
 /* outline btn-primary */
@@ -125,14 +134,17 @@ ul {
 .btn-secondary:link,
 .btn-secondary:visited {
   background-color: #9775fa;
+  border: 2px solid #9775fa;
 }
 .btn-secondary:hover,
 .btn-secondary:active {
   background-color: #7048e8;
+  border: 2px solid #7048e8;
 }
 .highlight {
   padding: 5px 10px;
-  background-color: #ffff;
+  border-radius: 4px;
+  color: #ffff;
 }
 
 .highlight-primary {
@@ -157,6 +169,9 @@ ul {
 
 /* -------------Section Styles----------------- */
 
+/* -------Nav------- */
+
+
 /* -----Hero section------ */
 
 .hero-section {
@@ -168,6 +183,7 @@ ul {
   text-align: center;
   width: 1000px;
   padding: 100px 200px;
+  border-radius: 20px;
   background-color: #339af0;
 }
 
