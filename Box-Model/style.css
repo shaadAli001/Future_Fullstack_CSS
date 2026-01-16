@@ -41,11 +41,20 @@ img{
   border: 2px solid black;
 } */
 
-.box {
+/* .box {
   box-sizing: border-box;
   background-color: plum;
-  border: 2px solid black;
-  padding: 10px;
-  width: 100px;
-  height: 100px;
+  border: 10px solid black;
+  padding: 50px;
+  width: 500px;
+  height: 500px;
+  margin: 100px;
+} */
+
+.inline-elem{
+  display: block;
+  background-color: blue;
+  width: 400px;
+  height: 400px;
+  padding: 100px;
 }
