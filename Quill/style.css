@@ -51,14 +51,19 @@ Black: #000000 (Black)
 /* -------------Global Styles----------------- */
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -83,12 +88,16 @@ p {
 a {
   text-decoration: none;
   font-size: 16px;
+  display: inline-block;
 }
 ul {
   list-style: none;
 }
 .small-text {
   font-size: 12px;
+}
+span {
+  display: inline-block;
 }
 
 /* -------------Components Styles----------------- */
@@ -188,19 +197,42 @@ ul {
   margin-bottom: 50px;
 }
 
+/* -----feature section------ */
+
+.features-section {
+  margin-bottom: 300px;
+}
+
+.features-main-heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.features-img {
+  max-width: 400px;
+  width: 100%;
+}
+.features-heading {
+  margin-bottom: 20px;
+}
 
 /* ----cta-section---- */
 
-.cta-section{
+.cta-section {
   margin-bottom: 300px;
 }
 
 .cta-card {
   text-align: center;
-  width: 1000px;
-  padding: 100px 200px;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* padding: 100px 200px; */
   border-radius: 20px;
   background-color: #339af0;
+}
+
+.cta-heading {
+  margin-bottom: 30px;
 }
 
 /* -----footer section----- */
@@ -211,19 +243,4 @@ ul {
 
 .social-icons {
   width: 20px;
-}
-
-/* -----feature section------ */
-
-.features-section{
-  margin-bottom: 300px;
-}
-
-.features-main-heading {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.features-img {
-  width: 400px;
 }
