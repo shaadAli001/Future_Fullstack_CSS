@@ -67,7 +67,39 @@ img{
   max-width: 1000px;
   height: 500px;
 } */
-img {
+
+/* img {
   max-width: 800px;
   width: 100%;
+} */
+
+.card {
+  height: 200px;
+  min-width: 800px;
+  background-color: salmon;
 }
+.no-width {
+  background-color: salmon;
+  display: inline-block;
+  text-align: center;
+}
+.width{
+  background-color: lightgreen;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+}
+.min-width{
+  display: inline-block;
+  background-color: blanchedalmond;
+  text-align: center;
+  min-width: 100px;
+}
+span{
+  background-color: azure;
+  display: inline-block;
+  max-width: 800px;
+  padding: 25px;
+  margin: 10px 25px;
+}
+
