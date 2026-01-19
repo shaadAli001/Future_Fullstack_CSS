@@ -2,4 +2,86 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
+/* .parent {
+  width: 800px;
+  height: 500px;
+}
+.parent input {
+  display: block;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+.parent button {
+  margin-bottom: 2rem;
+  width: 50%;
+} */
+
+/* .child {
+  width: 50%;
+  height: 50%;
+  background-color: blue;
+} */
+
+/* html {
+  font-size: 62.5%; 16 * 62.5% = 10px
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+a {
+  display: inline-block;
+  padding: 2rem;
+  background-color: lightgray;
+} */
+
+/* .container {
+  font-size: 20px;
+}
+.container h1 {
+  font-size: 2em;
+}
+.container p {
+  font-size: 1em;
+}
+.container a {
+  display: inline-block;
+  padding: 2em;
+  margin: 1.5em;
+  font-size: 0.5em;
+  background-color: lightgreen;
+} */
+
+/* a {
+  font-size: 50px;
+  padding: 0.4em 0.8em;
+  background-color: salmon;
+  display: inline-block;
+} */
+
+/* div{
+  width: 60vw;
+  height: 40vh;
+  background-color: lightblue;
+} */
+
+div {
+  width: 800px;
+  min-height: 500px;
+  background-color: lightblue;
+  overflow: auto;
+}
+
+/* div {
+  min-width: 800px;
+  background-color: lightblue;
+  overflow: auto;
+} */
+
+

@@ -55,6 +55,9 @@ Black: #000000 (Black)
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%; /*16px* 62.5% = 10px (global fontsize)*/
+}
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -63,6 +66,7 @@ body {
 }
 .container {
   max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
 }
 h1,
@@ -74,27 +78,27 @@ h3 {
   color: #212529;
 }
 h1 {
-  font-size: 62px;
+  font-size: 6.2rem;
 }
 h2 {
-  font-size: 48px;
+  font-size: 4.8rem;
 }
 h3 {
-  font-size: 40px;
+  font-size: 2.4rem;
 }
 p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.6rem;
   display: inline-block;
 }
 ul {
   list-style: none;
 }
 .small-text {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 span {
   display: inline-block;
@@ -103,14 +107,14 @@ span {
 /* -------------Components Styles----------------- */
 
 #heart-logo {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: red;
 }
 .btn {
-  padding: 15px 30px;
-  text-decoration: none;
-  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
   border-radius: 8px;
+  text-decoration: none;
   color: white;
 }
 /* filled btn-primary */
@@ -151,7 +155,7 @@ span {
   border: 2px solid #7048e8;
 }
 .highlight {
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   color: #ffff;
 }
@@ -178,34 +182,41 @@ span {
 
 /* -------------Section Styles----------------- */
 
+/* -------header------ */
+
+.header {
+  height: 100vh;
+  min-height: 800px;
+}
+
 /* -------Navbar------- */
 
 .navbar {
-  margin-bottom: 200px;
+  margin-bottom: 20rem;
 }
 
 /* -----Hero section------ */
 
 .hero-section {
   text-align: center;
-  margin-bottom: 300px;
+  margin-bottom: 30rem;
 }
 .hero-heading {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .hero-paragraph {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 /* -----feature section------ */
 
 .features-section {
-  margin-bottom: 300px;
+  margin-bottom: 30rem;
 }
 
 .features-main-heading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
 }
 
 .features-img {
@@ -213,13 +224,13 @@ span {
   width: 100%;
 }
 .features-heading {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 /* ----cta-section---- */
 
 .cta-section {
-  margin-bottom: 300px;
+  margin-bottom: 30rem;
 }
 
 .cta-card {
@@ -232,7 +243,7 @@ span {
 }
 
 .cta-heading {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 /* -----footer section----- */
