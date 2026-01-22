@@ -298,12 +298,11 @@ span {
 }
 
 /* -----footer section----- */
-
 .footer {
   display: flex;
-  /* text-align: center; */
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
   /* flex-direction: column;
   justify-content: center; */
 }
