@@ -101,7 +101,7 @@ Black: #000000 (Black)
   --black: #000000;
 
   /* Others */
-  --nav-height: 300px;
+  --nav-height: 100px;
 }
 
 * {
@@ -242,6 +242,13 @@ span {
   height: var(--nav-height);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nav-btn-container,
+.hero-btn-container {
+  display: flex;
+  gap: 2rem;
 }
 
 /* -----Hero section------ */
@@ -251,6 +258,10 @@ span {
   min-height: 400px;
   text-align: center;
   margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .hero-heading {
   margin-bottom: 1rem;
@@ -302,10 +313,14 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* text-align: center; */
-  /* flex-direction: column;
-  justify-content: center; */
+  gap: 1rem;
+  padding: 2rem;
 }
 .social-icons {
   width: 20px;
+}
+.social-icons-container,
+.footer-links-container {
+  display: flex;
+  gap: 1.5rem;
 }
