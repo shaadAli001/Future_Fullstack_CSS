@@ -300,7 +300,7 @@ span {
   text-align: center;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 100px 200px;
+  padding: 10rem 20rem;
   border-radius: 20px;
   background-color: var(--primary-base);
 }
@@ -310,6 +310,7 @@ span {
 }
 
 /* -----footer section----- */
+
 .footer {
   display: flex;
   flex-direction: column;
