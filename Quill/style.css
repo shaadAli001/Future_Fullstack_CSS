@@ -272,19 +272,29 @@ span {
 }
 
 /* -----feature section------ */
-
 .features-section {
   margin-bottom: 30rem;
+}
+
+.features-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15rem 5rem;
+  justify-items: center;
+  align-items: center;
 }
 
 .features-main-heading {
   text-align: center;
   margin-bottom: 8rem;
 }
-
 .features-img {
   max-width: 400px;
   width: 100%;
+}
+.features-img2 {
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
 .features-heading {
   margin-bottom: 2rem;
@@ -307,6 +317,7 @@ span {
 
 .cta-heading {
   margin-bottom: 3rem;
+  color: var(--white);
 }
 
 /* -----footer section----- */
