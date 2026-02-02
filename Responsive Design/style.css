@@ -40,52 +40,60 @@
     transition: all 0.5s;
   }
 } */
-
+html {
+  font-size: 62.5%; /* 16 × 0.625% = 10px */
+  /* 1rem = 10px */
+}
 body {
   background-color: bisque;
 }
-
-.review-grid {
-  max-width: 1200px;
+.main-container {
+  max-width: 120rem;
   width: 90%;
-  margin: 100px auto;
+  margin: 10rem auto;
+}
+.review-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 2rem;
 }
 .review-card {
   width: 100%;
   background-color: #fff;
-  padding: 20px;
+  padding: 2rem;
   border: 2px solid black;
   border-radius: 8px;
 }
+/* .review-card-2{
+grid-row: 2/3;
+grid-column: 1/2;
+} */
 .review-heading {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 .review-para {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 .review-person {
-  font-size: 14px;
-  font-weight: 700px;
+  font-size: 1.8rem;
+  font-weight: 700;
   justify-self: end;
 }
-@media (max-width: 1000px) {
-  .review-card {
-    padding: 15px;
+
+@media (max-width: 62.5rem) {
+  /* Base value 16px */
+  html {
+    font-size: 50%; /* 0.5 × 16px = 8px, 1rem = 8px*/
   }
-  .review-heading {
-    font-size: 30px;
-    margin-bottom: 15px;
+}
+
+@media (max-width: 31.25rem) {
+  html {
+    font-size: 37.5%; /* 16px × 0.375 = 6px , 1rem = 6px*/
   }
-  .review-para {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  .review-person {
-    font-size: 14px;
+  .review-grid {
+    grid-template-columns: 1fr;
   }
 }

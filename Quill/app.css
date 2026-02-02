@@ -1,21 +1,23 @@
-/* ----------Typogrphy----------
+/* 
 
------------FONT SIZE-----------
-12PX 16PX 20P 24PX 3PX 48PX 62PX
+---------- TYPOGRAPHY ----------
 
------------FONT WEIGHT-----------
-700,400
+FONT SIZES
+12px / 16px / 20px / 24px / 32px / 40px / 48px / 62px
 
------------LINE HEIGHT-----------
-1.2,1.5
+FONT WEIGHTS
+400 / 700
 
------------LETTER SPACING-----------
--2PX
+LINE HEIGHTS
+1.2 / 1.5
 
------------FONT FAMILY-----------
-POPPINS
+LETTER SPACING
+0 / -2px
 
------------COLORS----------- 
+FONT FAMILY
+Poppins
+
+---------- COLORS ----------
 
 PRIMARY
 Base: #339af0 (Sky Blue)
@@ -39,21 +41,20 @@ Shade: #212529 (Graphite)
 White: #ffffff (White)
 Black: #000000 (Black)
 
+---------- BORDER RADIUS ----------
 
-----Border radius---- 
+4px / 8px / 20px
 
- 4px , 8px , 20px 
+---------- SPACING SYSTEM ----------
 
- -----Spacing system----
+5px / 10px / 15px / 20px / 25px / 30px / 40px / 50px / 60px / 70px / 80px / 90px / 100px / 125px / 150px / 200px / 250px / 300px / 400px / 500px
 
- 5px / 10px / 15px / 20px / 25px / 30px / 40px / 50px / 60px / 70px / 80px / 90px / 100px / 125px / 150px / 200px / 250px / 300px / 400px / 500px
- */
+*/
 
-/* -------------Global Styles----------------- */
+/* ----------------------- GLOBAL STYLES ----------------------- */
 
 :root {
   /* FONT SIZE */
-
   --text-sm: 1.2rem;
   --text-base: 1.6rem;
   --text-paragraph: 2rem;
@@ -67,7 +68,7 @@ Black: #000000 (Black)
   --font-weight-normal: 400;
   --font-weight-bold: 700;
 
-  /* LINE HEIGHT */
+  /* LINE HEIGHTS */
   --line-height-tight: 1.2;
   --line-height-normal: 1.5;
 
@@ -78,140 +79,165 @@ Black: #000000 (Black)
   --font-family: "Poppins", sans-serif;
 
   /* COLORS */
-  /* Primary */
   --primary-base: #339af0;
   --primary-tint: #d0ebff;
   --primary-shade: #1c7ed6;
-
-  /* SECONDARY */
   --secondary-base: #9775fa;
   --secondary-tint: #e5dbff;
   --secondary-shade: #7048e8;
-
-  /* TERTIARY */
   --tertiary-base: #ff922b;
   --tertiary-tint: #ffe8cc;
-  --tertiary-Shade: #f76707;
-
-  /* GREY */
+  --tertiary-shade: #f76707;
   --grey-base: #495057;
   --grey-tint: #f1f3f5;
   --grey-shade: #212529;
   --white: #ffffff;
   --black: #000000;
 
-  /* Others */
-  --nav-height: 100px;
+  /* MISCELLANEOUS */
+  --nav-height: 100px; /* Update the value in the flexbox topic */
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
 html {
-  font-size: 62.5%; /* 16px × 62.5% = 10px (global fontsize)*/
+  font-size: 62.5%;
+  /* 62.5% * 16px = 10px */
+  /* 1rem = 10px */
 }
+
 body {
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-normal);
   color: var(--grey-base);
 }
+
 .container {
   max-width: 1200px;
-  width: 90%; /* set with respect to parent which is body in this case*/
+  width: 90%;
   margin: 0 auto;
 }
+
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   letter-spacing: var(--letter-spacing-tight);
   color: var(--grey-shade);
 }
+
 h1 {
   font-size: var(--text-h1);
 }
+
 h2 {
   font-size: var(--text-h2);
 }
+
 h3 {
   font-size: var(--text-h3);
 }
+
+h4 {
+  font-size: var(--text-h4);
+}
+
+h5 {
+  font-size: var(--text-h5);
+}
+
 p {
   font-size: var(--text-paragraph);
 }
+
 a {
   text-decoration: none;
   font-size: var(--text-base);
   display: inline-block;
 }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--grey-base);
+}
+
 ul {
   list-style: none;
 }
-.small-text {
-  font-size: var(--text-sm);
-}
+
 span {
   display: inline-block;
 }
 
-/* -------------Components Styles----------------- */
-
-#heart-logo {
+.small-text {
   font-size: var(--text-sm);
-  color: red;
 }
+
+/* ----------------------- COMPONENTS ----------------------- */
+
 .btn {
   font-size: var(--text-base);
+  text-decoration: none;
   padding: 1.5rem 3rem;
   border-radius: 8px;
-  text-decoration: none;
-  color: var(--white);
 }
-/* filled btn-primary */
+
 .btn-primary:link,
 .btn-primary:visited {
+  color: var(--white);
   background-color: var(--primary-base);
   border: 2px solid var(--primary-base);
 }
+
 .btn-primary:hover,
 .btn-primary:active {
+  color: var(--white);
   background-color: var(--primary-shade);
   border: 2px solid var(--primary-shade);
 }
 
-/* outline btn-primary */
 .btn-primary-outline:link,
 .btn-primary-outline:visited {
   color: var(--primary-base);
-  background-color: transparent;
+  background-color: var(--white);
   border: 2px solid var(--primary-base);
 }
+
 .btn-primary-outline:hover,
 .btn-primary-outline:active {
   color: var(--primary-shade);
-  background-color: transparent;
+  background-color: var(--white);
   border: 2px solid var(--primary-shade);
 }
 
-/* filled btn-secondary */
 .btn-secondary:link,
 .btn-secondary:visited {
+  color: var(--white);
   background-color: var(--secondary-base);
   border: 2px solid var(--secondary-base);
 }
+
 .btn-secondary:hover,
 .btn-secondary:active {
+  color: var(--white);
   background-color: var(--secondary-shade);
   border: 2px solid var(--secondary-shade);
 }
+
 .highlight {
+  color: var(--white);
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  color: var(--white);
 }
 
 .highlight-primary {
@@ -234,9 +260,9 @@ span {
   width: 80px;
 }
 
-/* -------------Section Styles----------------- */
+/* ----------------------- SECTIONS ----------------------- */
 
-/* -------Navbar------- */
+/* ------ NAVBAR ------ */
 
 .navbar {
   height: var(--nav-height);
@@ -245,75 +271,87 @@ span {
   align-items: center;
 }
 
-.nav-btn-container,
+.nav-btn-container {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ------ HERO SECTION ------ */
+
+.hero-section {
+  height: calc(100vh - var(--nav-height));
+  min-height: 400px;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.hero-paragraph {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
 .hero-btn-container {
   display: flex;
   gap: 2rem;
 }
 
-/* -----Hero section------ */
-
-.hero-section {
-  height: calc(100vh - var(--nav-height));
-  min-height: 400px;
-  margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-.hero-heading {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-.hero-paragraph {
-  margin-bottom: 5rem;
-}
-
-/* -----feature section------ */
+/* ------ FEATURES SECTION ------ */
 
 .features-section {
   margin-bottom: 30rem;
-}
-
-.features-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10rem 5rem;
-  justify-items: center;
-  align-items: center;
 }
 
 .features-main-heading {
   text-align: center;
   margin-bottom: 8rem;
 }
-.features-img {
-  max-width: 400px;
-  width: 100%;
+
+.features-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 15rem;
+  column-gap: 5rem;
+  justify-items: center;
+  align-items: center;
 }
-.features-img2 {
-  grid-row: 2/3;
-  grid-column: 1/2;
+
+.feature-img-swap-order {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
 }
-.features-heading {
+
+.feature-headings {
   margin-bottom: 2rem;
 }
 
-/* ----cta-section---- */
+.feature-img {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* ------ CTA SECTION ------ */
 
 .cta-section {
-  margin-bottom: 22.5rem;
+  margin-bottom: 30rem;
+  display: flex;
+  justify-content: center;
 }
 
 .cta-card {
   text-align: center;
+  background-color: var(--primary-base);
   max-width: 1000px;
-  margin: 0 auto;
+  width: 100%;
   padding: 10rem 20rem;
   border-radius: 20px;
-  background-color: var(--primary-base);
 }
 
 .cta-heading {
@@ -321,20 +359,29 @@ span {
   color: var(--white);
 }
 
-/* -----footer section----- */
+/* ------ FOOTER ------ */
 
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 2rem;
 }
+
+.social-icons-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links-container {
+  display: flex;
+  gap: 1rem;
+}
+
 .social-icons {
   width: 20px;
 }
-.social-icons-container,
-.footer-links-container {
-  display: flex;
-  gap: 1.5rem;
+
+.heart-icon {
+  color: var(--secondary-base);
 }
