@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* .container {
+  width: 400px;
+  height: 400px;
+  background-color: gray;
+  margin: 100px 0px 0px 100px;
+  box-shadow: 50px 50px 5px 0px khaki;
+} */
+
+.card {
+  width: 500px;
+  height: 500px;
+  background-color: lightblue;
+  box-shadow: 0px 2px 4px black;
+  transition: border-radius 2s ease-in-out;
+}
+.card:hover {
+  border-radius: 50%;
+  background-color: blue;
+}

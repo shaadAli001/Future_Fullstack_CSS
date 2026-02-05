@@ -96,6 +96,7 @@ Black: #000000 (Black)
 
   /* MISCELLANEOUS */
   --nav-height: 100px; /* Update the value in the flexbox topic */
+  --transition-time: 0.5s;
 }
 
 * {
@@ -115,6 +116,7 @@ body {
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-normal);
   color: var(--grey-base);
+  /* background-color: rgba(255, 255, 255, 0.263); */
 }
 
 .container {
@@ -197,6 +199,7 @@ span {
   color: var(--white);
   background-color: var(--primary-base);
   border: 2px solid var(--primary-base);
+  transition: var(--transition-time);
 }
 
 .btn-primary:hover,
@@ -205,6 +208,7 @@ span {
   background-color: var(--primary-shade);
   border: 2px solid var(--primary-shade);
   transform: scale(1.05, 1.05);
+  transition: var(--transition-time);
 }
 
 .btn-primary-outline:link,
@@ -212,6 +216,7 @@ span {
   color: var(--primary-base);
   background-color: var(--white);
   border: 2px solid var(--primary-base);
+  transition: var(--transition-time);
 }
 
 .btn-primary-outline:hover,
@@ -220,6 +225,8 @@ span {
   background-color: var(--white);
   border: 2px solid var(--primary-shade);
   transform: scale(1.05, 1.05);
+  box-shadow: 0px 2px var(--primary-base);
+  transition: var(--transition-time);
 }
 
 .btn-secondary:link,
@@ -227,6 +234,7 @@ span {
   color: var(--white);
   background-color: var(--secondary-base);
   border: 2px solid var(--secondary-base);
+  transition: var(--transition-time);
 }
 
 .btn-secondary:hover,
@@ -235,6 +243,8 @@ span {
   background-color: var(--secondary-shade);
   border: 2px solid var(--secondary-shade);
   transform: scale(1.05, 1.05);
+  box-shadow: 0px 3px 6px 0px var(--grey-base);
+  transition: var(--transition-time);
 }
 
 .highlight {
@@ -256,7 +266,9 @@ span {
 }
 
 .logo-md {
-  width: 100px;
+  position: relative;
+  bottom: -13px;
+  width: 150px;
 }
 
 .logo-sm {
@@ -268,10 +280,16 @@ span {
 /* ------ NAVBAR ------ */
 
 .navbar {
+  position: sticky;
+  top: 0;
+  padding: 0 10%;
   height: var(--nav-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 999;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--grey-base);
 }
 
 .nav-btn-container {
@@ -417,9 +435,9 @@ span {
   right: 0;
   font-size: 1.2rem;
   background-color: var(--tertiary-base);
-  padding: 0.5rem 1rem;
+  padding: 0.35rem 0.8rem;
   border-radius: 4px;
   font-weight: 700;
   color: white;
-  transform: translate(70%, -70%);
+  transform: translate(70%, -14%);
 }
